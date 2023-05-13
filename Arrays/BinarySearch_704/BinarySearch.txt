@@ -8,3 +8,8 @@ Examples:
     Output: 4
     Explanation: 9 exists in nums and its index is 4
 
+
+思路：
+    首先，给定条件为有序无重复数组，并且时间复杂度为O(logn)，我们可以想到运用二分查找来实现，其中二分查找容易出错的点就是对于变量区间的不确定性，到底是while(low<high)还是
+    while(low<=high)，如果我们定义的区间为左闭右闭，循环条件为while(low<=high),因为其中low==high有意义，反之亦然
+    确定循环条件，我们需要目标 mid= low+1 或者是 mid = high-1，因为中间这个变量确定不是我们要找的。清除这些我们便可以进行解题
