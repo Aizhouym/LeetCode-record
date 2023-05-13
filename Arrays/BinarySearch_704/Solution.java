@@ -1,5 +1,10 @@
-package 704_BinarySearch;
-
 public class Solution {
-    
+
+    public static void main(String[] args) {
+        
+    }
+
+
 }
+    
+
