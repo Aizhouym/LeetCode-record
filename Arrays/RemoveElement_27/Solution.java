@@ -1,7 +1,4 @@
 package Arrays.RemoveElement_27;
-import java.util.Scanner;
-
-import javafx.util.converter.NumberStringConverter;
 
 public class Solution{
     public int removeElement(int[] nums, int val){
