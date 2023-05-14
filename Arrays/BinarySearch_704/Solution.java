@@ -24,10 +24,15 @@ public class Solution {
 
 
     public static void main(String[] args) {
-    
-        Solution solution = new Solution();
-        int[] num ={1,4,9,10,17,25,29,35,40,45,48,75};
+        
         Scanner sc = new Scanner(System.in);
+        Solution solution = new Solution();
+        System.out.println("请输入数组长度：");
+        int length = sc.nextInt();
+        int[] num = new int[length];
+        for(int i = 0; i<length; i++){
+            num[i] = sc.nextInt();
+        }
         System.out.print("请输入target:");
         int target = sc.nextInt();
         System.out.println(solution.getIndex(num, target));

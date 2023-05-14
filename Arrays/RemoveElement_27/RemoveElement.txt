@@ -37,3 +37,10 @@ Output: 5, nums = [0,1,4,0,3,_,_,_]
 Explanation: Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4.
 Note that the five elements can be returned in any order.
 It does not matter what you leave beyond the returned k (hence they are underscores).
+
+
+题解：本题为删除数组空间中特定元素，其中的约束条件为原地删除，空间复杂度为O(1)，我们首先知道数组是相同数据类型的集合，拥有连续的地址，删除元素实际意义上
+指的是将其覆盖，而非物理地址的删除。
+法一：我们可以通过暴力解法，首先一个for循环遍历数组中那些元素为目标删除值，第二遍for循环进行数组的更新
+法二：双指针，通过设置快慢指针，利用一次循环完成两次循环的任务，首先利用快指针遍历原来数组，来寻找新数组的元素，如果快指针的元素不是目标元素，就把对应的值赋给慢指针。
+慢指针对应数组下标进行更新。
