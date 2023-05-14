@@ -1,4 +1,3 @@
-package Arrays.RemoveElement_27;
 
 public class Solution{
     public int removeElement(int[] nums, int val){
