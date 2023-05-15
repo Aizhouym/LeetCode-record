@@ -14,7 +14,7 @@ public class Solution{
             }
         }//通过快慢指针完成覆盖
 
-        for(int i=length-countZero; i<length; i++){
+        for(int i=length-countZero-1; i<length; i++){
             nums[i] = 0;
         }//将后续的值覆盖为0；
 
