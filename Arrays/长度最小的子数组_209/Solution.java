@@ -26,7 +26,7 @@ public class Solution{
         int result = Integer.MAX_VALUE;//init 
         int sum = 0;
         int sublen = 0;
-        int i = 0;//定义活动窗口的其实位置
+        int i = 0;//定义活动窗口的起始位置
 
         for(int j=0; j<nums.length; j++){
             sum += nums[j];
