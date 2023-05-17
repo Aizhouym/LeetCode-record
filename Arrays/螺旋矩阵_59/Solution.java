@@ -1,5 +1,4 @@
 
-
 public class Solution{
     public int[][] generateMatrix(int n){
         int loop = 0;
@@ -14,7 +13,7 @@ public class Solution{
                 result[start][j] = count++;
             }//上边 从左到右
 
-            for (i = start; i < n-loop; i++){
+            for (i = start; i < n - loop; i++){
                 result[i][j] = count++;
             }//右边 从上到下
             
