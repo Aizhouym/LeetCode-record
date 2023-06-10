@@ -1,0 +1,3 @@
+目标： input : "the blue sky" -> output: "sky blue the"
+
+题解：

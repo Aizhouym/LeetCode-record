@@ -7,6 +7,7 @@ public class Elimination {
         Elimination elimination = new Elimination();
         elimination.solution(23);
     }
+    
     public void solution(int n){
         ArrayList<Integer> arrayList = new ArrayList<>();//初始化list
         for (int i = 0; i < n; i++){
