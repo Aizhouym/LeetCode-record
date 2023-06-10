@@ -1,3 +1,5 @@
 目标： input : "the blue sky" -> output: "sky blue the"
 
-题解：
+题解：java: 可以直接调用库函数实现字符串的分割以及拼接，其中使用String类中的trim去除头尾中的空格，之后创建
+      StringBuilder实现对string.split(" ")的获取，在每个字符前加入空格
+      python: 首先调用strip()去除多余的空格，之后使用切片实现字符串反转，最后调用join函数完成字符串拼接。   

@@ -1,18 +1,13 @@
 
-public class Solution {
-    // public String reverseString(String s){
-
-    // }   
-    
-    public static void main(String[] args) {
-        // Solution solution = new Solution();
-        String s = "the blue sky";
-        String[] list = s.split(" ");
+class Solution {
+    public String reverseWords(String s) {
+        String x = s.trim(); //注意String中的 trim方法，去除头尾的空格
+        String[] list = x.split(" ");
         StringBuilder sb = new StringBuilder();
 
         for(int i = list.length - 1; i>=0; i--){
             String tmp = list[i];
-            if(tmp.equals(" ")){
+            if(tmp.length() == 0){
                continue; 
             }
             sb.append(tmp);
@@ -21,10 +16,7 @@ public class Solution {
             }
         }
 
-        StringBuilder sBuilder = new StringBuilder(s);
-        System.out.println(sBuilder.reverse().toString());
-
         String output = sb.toString();
-        System.out.println(output);
+        return output;
     }
 }
