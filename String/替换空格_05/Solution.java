@@ -2,6 +2,7 @@
 
 public class Solution{
     public String replaceSpace(String s){
+        
         if (s == null){
             return null;
         }
