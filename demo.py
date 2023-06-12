@@ -22,9 +22,3 @@ import os
 print(os.name)
 print(os.uname_result)
 print(os.path.abspath('.'))
-print(os.path)
-
-
-model_list = [2,37,40,42,41,12,20,45,4,31,10,26,48,47,34,18,5,27,32,21,6,14,36,46,25,28,17,23,7,19,22,8,16,33,49,35,15,13,11,9,3,50,1,44,43,29,39,24,38,30]
-print(len(model_list))
-print(sorted(model_list))
